@@ -1,0 +1,17 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+.disabled,
+.disabled:hover,
+.disabled:focus {
+  color: #b4bccc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #e6ebf5;
+}
+.text-center {
+  text-align: center;
+}
