@@ -15,7 +15,7 @@
 </style>
 <script>
   import FeedBlock from '../components/FeedBlock.vue'
-  import * as feedService from '@/services/feedService'
+  import { getFeeds } from '@/composition/feed'
 
   export default {
     components: {
@@ -39,7 +39,7 @@
     },
     methods: {
       async initFeedList() {
-        let feedList = await feedService.getFeeds()
+        let feedList = await getFeeds()
         this.feedList = feedList
         console.log('feed/Index.vue>data:[feedList:[]]', this.feedList)
       }

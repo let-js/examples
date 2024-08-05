@@ -7,11 +7,15 @@ import {
 export const useFeedStore = defineStore('feed', {
   state: () => ({
     feed: new Feed(),
+    feeds: []
   }),
   getters: {},
   actions: {
     updateFeed(feed) {
       this.feed = feed
+    },
+    updateFeeds(feeds) {
+      this.feeds = feeds
     },
     getFeed() {
       return this.feed

@@ -21,6 +21,6 @@ export async function getFeeds(options) {
       return source.title + no + no
     }
   })
-  console.log('feedList', feedList)
+  logger.log('feedList:', feedList)
   return feedList.toJSON()
 }
